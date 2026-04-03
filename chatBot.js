@@ -87,6 +87,7 @@ export async function generate(userMessage, threadId){
                             ],
                         tool_choice: "auto"
                     })
+                    
 
                 messages.push(completion.choices[0].message)
 
