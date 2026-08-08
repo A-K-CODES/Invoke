@@ -3,7 +3,7 @@ import { Models } from "groq-sdk/resources";
 import { tavily } from "@tavily/core";
 import NodeCache from "node-cache" ;
 
-
+console.log('GROQ_API_KEY present:', !!process.env.GROQ_API_KEY);
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY});
 
 const cache = new NodeCache({stdTTL: 60*60*24}); /// 24 hours

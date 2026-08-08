@@ -3,7 +3,9 @@ import {generate} from "./chatBot.js"
 import cors from "cors";
 const app = express()
 const port = 3001;
-
+// ...existing code...
+import 'dotenv/config';
+// ...existing code...
 app.use(cors());
 app.use(express.json());
 
